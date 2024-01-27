@@ -1,0 +1,15 @@
+C:\Users\roose\OneDrive\Desktop\SistemaMatriculacion\Model\bin\Debug\Model.pdb
+C:\Users\roose\OneDrive\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\roose\OneDrive\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\roose\OneDrive\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.pdb
+C:\Users\roose\OneDrive\Desktop\SistemaMatriculacion\Model\bin\Debug\Model.dll
+C:\Users\roose\OneDrive\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.dll
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\bin\Debug\Model.dll
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\bin\Debug\Model.pdb
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\bin\Debug\Datos.dll
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\bin\Debug\Datos.pdb
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.dll
+C:\Users\aa_so\Desktop\SistemaMatriculacion\Model\obj\Debug\Model.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+	<setting key="SecurityIV" value="34A9F545E39CEB1A" />
+	<setting key="SecurityKey" value="B65437AF2EE50772" />
+	<setting key="ConnectionString" value="Data Source=DESKTOP-M5BV3EC;Initial Catalog=sistema_matriculacion;Trusted_Connection=True" />
+</appSettings>

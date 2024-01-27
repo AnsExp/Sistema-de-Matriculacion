@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AA9FCDC-3091-4B57-8602-47080A5DD680}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Controller</RootNamespace>
+    <AssemblyName>Controller</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\ControlAsignatura.cs" />
+    <Compile Include="Controles\ControlEstudiante.cs" />
+    <Compile Include="Controles\ControlGrid.cs" />
+    <Compile Include="Controles\ControlMatricula.cs" />
+    <Compile Include="Controles\ControlProfesor.cs" />
+    <Compile Include="Controles\GroupBoxControl.cs" />
+    <Compile Include="Documento\ControlDocument.cs" />
+    <Compile Include="Documento\ComboComand.cs" />
+    <Compile Include="Enumerations\CiudadesAzuay.cs" />
+    <Compile Include="Enumerations\CiudadesBolivar.cs" />
+    <Compile Include="Enumerations\CiudadesCanar.cs" />
+    <Compile Include="Enumerations\CiudadesCarchi.cs" />
+    <Compile Include="Enumerations\CiudadesChimborazo.cs" />
+    <Compile Include="Enumerations\CiudadesCotopaxi.cs" />
+    <Compile Include="Enumerations\CiudadesElOro.cs" />
+    <Compile Include="Enumerations\CiudadesEsmeraldas.cs" />
+    <Compile Include="Enumerations\CiudadesGalapagos.cs" />
+    <Compile Include="Enumerations\CiudadesGuayas.cs" />
+    <Compile Include="Enumerations\CiudadesImbabura.cs" />
+    <Compile Include="Enumerations\CiudadesLoja.cs" />
+    <Compile Include="Enumerations\CiudadesLosRios.cs" />
+    <Compile Include="Enumerations\CiudadesManabi.cs" />
+    <Compile Include="Enumerations\CiudadesMoronaSantiago.cs" />
+    <Compile Include="Enumerations\CiudadesNapo.cs" />
+    <Compile Include="Enumerations\CiudadesOrellana.cs" />
+    <Compile Include="Enumerations\CiudadesPastaza.cs" />
+    <Compile Include="Enumerations\CiudadesPichincha.cs" />
+    <Compile Include="Enumerations\CiudadesSantaElena.cs" />
+    <Compile Include="Enumerations\CiudadesSantoDomindoDeLosTsachilas.cs" />
+    <Compile Include="Enumerations\CiudadesSucumbios.cs" />
+    <Compile Include="Enumerations\CiudadesTungurahua.cs" />
+    <Compile Include="Enumerations\CiudadesZamoraChinchipe.cs" />
+    <Compile Include="Enumerations\Locacion.cs" />
+    <Compile Include="Enumerations\TiposDeDocumentacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{da44c31e-a932-481a-903d-4d085983c51c}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{c08658a4-ae85-4a2e-8f50-62fffb6e578c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

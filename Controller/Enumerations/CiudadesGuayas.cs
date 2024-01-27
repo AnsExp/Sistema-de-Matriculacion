@@ -1,0 +1,30 @@
+﻿namespace Controller.Enumerations
+{
+    internal enum CiudadesGuayas
+    {
+        Balao,
+        Balzar,
+        Colimes,
+        Coroles_Marcelino_Maridueña,
+        Daule,
+        Durán,
+        El_Empalme,
+        El_Triunfo,
+        General_Antonio_Elizalde,
+        Guayaquil,
+        Isidro_Ayora,
+        Lomas_de_Sargentillo,
+        Milagro,
+        Naranjal,
+        Naranjito,
+        Nobol,
+        Palestina,
+        Pedro_Carbo,
+        Playas,
+        Salitre,
+        Samborondón,
+        Santa_Lucía,
+        Simón_Bolivar,
+        Yaguachi
+    }
+}
