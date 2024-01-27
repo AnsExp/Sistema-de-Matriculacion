@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFDA747D-DFCF-4E33-853B-EA267AB23D4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\ActualizarAsignaturaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarEstudianteFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarMatriculaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarProfesorFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarAsignaturaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarEstudianteFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarMatriculaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarProfesorFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarAsignaturaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarEstudianteFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarMatriculaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarProfesorFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FramePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grids\Filtro.cs" />
+    <Compile Include="Grids\GridAsignatura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\GridEstudiante.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\GridMatricula.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\GridProfesor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LauncerSistemaMatriculacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ActualizarAsignaturaFormulario.resx">
+      <DependentUpon>ActualizarAsignaturaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ActualizarEstudianteFormulario.resx">
+      <DependentUpon>ActualizarEstudianteFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ActualizarMatriculaFormulario.resx">
+      <DependentUpon>ActualizarMatriculaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ActualizarProfesorFormulario.resx">
+      <DependentUpon>ActualizarProfesorFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgregarAsignaturaFormulario.resx">
+      <DependentUpon>AgregarAsignaturaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgregarEstudianteFormulario.resx">
+      <DependentUpon>AgregarEstudianteFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgregarMatriculaFormulario.resx">
+      <DependentUpon>AgregarMatriculaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgregarProfesorFormulario.resx">
+      <DependentUpon>AgregarProfesorFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarAsignaturaFormulario.resx">
+      <DependentUpon>EliminarAsignaturaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarEstudianteFormulario.resx">
+      <DependentUpon>EliminarEstudianteFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarMatriculaFormulario.resx">
+      <DependentUpon>EliminarMatriculaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarProfesorFormulario.resx">
+      <DependentUpon>EliminarProfesorFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FramePrincipal.resx">
+      <DependentUpon>FramePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{2aa9fcdc-3091-4b57-8602-47080a5dd680}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
